@@ -34,7 +34,7 @@ Usage
 -----
 
 ```javacript
-var torchecker = require('torchecker);
+var torchecker = require('torchecker');
 
 // will remember the EXTERNAL_IP and fetch again once a day
 // optional port number as second parameter, otherwise assumes port 80
