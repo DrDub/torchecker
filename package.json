@@ -5,10 +5,10 @@
     "keywords":[ "tor", "privacy" ],
     "version":"0.1.0",
     "description":"node package that checks whether a connection is coming from a Tor exit node",
-    "repository":[
+    "repository":{
 	"type":"git",
 	"url":"https://github.com/DrDub/torchecker.git"
-    ],
+    },
     "main": "./lib/torchecker.js",
     "maintainers" : [{
 	"name":"Pablo Duboue",
