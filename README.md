@@ -33,7 +33,7 @@ expectations of people using the Tor network.
 Usage
 -----
 
-```javacript
+```javascript
 var torchecker = require('torchecker');
 
 // will remember the EXTERNAL_IP and fetch again once a day
