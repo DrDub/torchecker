@@ -3,8 +3,9 @@ torchecker
 
 node package that checks whether a connection is coming from a Tor exit node.
 
-To function, torchecker uses an external IP you provide and then
-fetches a list of exit node IPs from
+To function, torchecker uses an external IP (ideally, this external IP
+is the IP of your server, it is used to check for exit node policies)
+you provide and then fetches a list of exit node IPs from
 
 http://exitlist.torproject.org/exit-addresses
 
@@ -30,6 +31,7 @@ the same vein as the Do Not Track Web tracking opt out policies,
 torchecker allows developers to respect the enhanced privacy
 expectations of people using the Tor network.
 
+
 Usage
 -----
 
@@ -44,6 +46,10 @@ console.log(torchecker.check(request.connection)); // returns true if coming thr
 console.log(torchecker.check("38.229.70.31");
 console.log(torchecker.list()); // if you're curious
 ```
+
+In the example, torchecker.check should return true if the client IP
+38.229.70.31 is Tor traffic contacting your server at the given port.
+
 
 Learn more
 ----------
